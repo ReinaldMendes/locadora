@@ -23,8 +23,9 @@ export const login = async (req, res) => {
       res.status(404).json({
         error: "Email os passaword incorrect",
       });
+    } else {
+      res.json(user);
     }
-    res.json(user);
   } catch (error) {
     res.status(400).send(error.message);
   }
