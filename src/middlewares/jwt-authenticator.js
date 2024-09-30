@@ -1,4 +1,4 @@
-import jwtServices from "../services/jwt-services";
+import jwtServices from "../services/jwt-services.js";
 
 const jwtAuthenticator = (req, res, next) => {
   try {
